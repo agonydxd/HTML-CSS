@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body{
+    background-color:#9bf1d5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+h1#principal {
+    background-color: #0db130;
+    color: rgba(255, 253, 253, 0.993); 
+    text-align: center;
+    padding: 20px;
+    width: 600px;
+}
+h1#secundario{
+  background-color: #31c551;
+  text-align: center;
+  font-size: 30px;
+  padding:17px;
+  border-radius: 30px;
+}
+h1#terciario{
+    background-color: #31c551;
+    text-align: center;
+    font-size: 30px;
+    padding:17px;  
+    border-radius: 30px;
+}
+
+h2{
+   background-color: rgb(142, 228, 178);
+}
+ .basico{
+   
+    color: rgb(7, 134, 34);
+    text-align: center;
+ }
+
+ .intermediario{
+    color: rgb(173, 173, 2);
+    text-align: center;
+ }
+
+ .avançado{
+    color: red;
+    text-align: center;
+ }
+
+ p {
+font-size: 17px;  
+font-style: oblique;
+}
+
