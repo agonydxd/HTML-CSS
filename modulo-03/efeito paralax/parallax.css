@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(154, 153, 227);
+}
+
+
+div#parallax {
+    background-color: aqua;
+    background-image: url(paisagem01.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:50vh;
+    
+}
+
+div > p {
+    display: inline-block;
+    background-color: rgba(87, 67, 67, 0.363);
+    width: 200px;
+    height:  30vh;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
