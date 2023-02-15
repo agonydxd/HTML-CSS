@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(178, 182, 182);
+}
+
+iframe{
+    background-color: #8aa9eb;
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
