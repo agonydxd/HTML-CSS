@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email e telefone</title>
+</head>
+<body>
+    <h1>Dados pessoais</h1>
+
+    <form action="cadastro.js">
+        <Fieldset>
+            <legend>Escolha  sua Regiao</legend>
+            <select name="regiao" id="iregiao">
+                <optgroup label="Nordeste" >
+                    <option value="PE" selected>Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio grande do Norte</option>
+                    <option value="AL">Alagoás</option>
+                    <option value="PA">Paraíba</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="profs">
+                <datalist id="profs">
+                    <option>Desenvolvedor</option>
+                    <option value="eng">Engenheiro de software</option>
+                </datalist>
+             </p>
+
+             <textarea name="mensg" id="mense" cols="30" rows="10"></textarea>
+
+        </Fieldset>
+    
+            <input type="submit" value="enviar"> <input type="reset" value="limpar">
+            
+    </form>
+    
+</body>
+</html>
