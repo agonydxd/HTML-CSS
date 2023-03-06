@@ -1,40 +1,82 @@
 @charset "UTF-8";
+/*
+telas pequenas: até 600px
+celular: 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+telas grandes(tv): =>1200px
+*/
 
-*{
-margin: 0px;
-padding: 0px;
-font-family: Arial, Helvetica, sans-serif;
-box-sizing: border-box;
+@media print /*impressora*/ {
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main{
+        border : solid 2px black;     
+    }
+     main > h1 {
+        color: rgb(0, 0, 0);
+        text-shadow: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main::after{
+        content: 'media print feita com media query';
+    }
+
+    img#phone{display:none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#tablet{display: none;}
 }
 
-body{
- height: 100vh;
- background-image: url(../imagens/back-phone.jpg);
- background-position: center center;
- background-size: cover;
- background-repeat: no-repeat;
+@media screen and (min-width: 762px) and (max-width:992px)/*TABLET*/{
+    body{
+    background-image: url(../imagens/back-tablet.jpg);
+}   
+    h1::after{
+        content: 'Device breakpoint';
 }
 
-main{
- background-color: #ffffffd0;
- width: 80vw; margin: auto;
- padding: 10px;
- margin-top: 20px;
- border-radius: 5px 5px 5px ;
+    img#phone{display:none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img#tablet{display: block;}
 }
 
-h1{
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.642);
+@media screen and (min-width:992px) and (max-width:1200px) /*DESKTOP*/{
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main{
+        width: 600px;
+    }
+    h1::after{
+        content: 'Device breakpoint';
+    }
+
+    img#phone{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}  
+    img#tv{display: none;}
+    img#tablet{display: none;}
+
 }
 
-img{
-    display: block;
-    margin: auto;
+@media screen and (min-width:1200px) /*Telas grandes(tv)*/ {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    h1::after{
+        content: 'Device breakpoint';
+    }
+    main{
+        width: 900px;
+    }
+    img#phone{display:none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+    img#tablet{display: none;}
 }
-img#phone{display: block;}
-img#print{display: none;}
-img#pc{display: none;}
-img#tv{display: none;}
-img#tablet{display: none;}
